@@ -1,11 +1,4 @@
-import Link from 'next/link'
 import { Button } from '.'
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-} from 'react-icons/fa'
 import { SocialMedia } from './SocialMedia'
 
 interface HeaderProps {
@@ -21,17 +14,17 @@ export const HomeSection = ({ isDarkMode }: HeaderProps) => {
       }`}
     >
       <h1
-        className={`text-5xl font-bold ${
+        className={`text-2xl font-bold md:text-5xl ${
           isDarkMode ? 'text-textLight-500' : 'text-textDark-500'
         }`}
       >
         Desenvolvedor de Software
       </h1>
-      <h1 className="font-pressstart text-5xl text-lightTitle-500">
+      <h1 className="font-pressstart text-2xl text-lightTitle-500 md:text-5xl">
         Diego Sousa
       </h1>
       <p
-        className={`w-[576px] text-center text-2xl ${
+        className={`text-center text-xl md:w-[576px] md:text-2xl ${
           isDarkMode ? 'text-lightDescription-500' : 'text-darkDescription-500'
         }`}
       >
@@ -56,7 +49,7 @@ export const HomeSection = ({ isDarkMode }: HeaderProps) => {
             className="bg-lightTitle-500"
           />
         </div>
-        <div className="mt-4 md:absolute md:bottom-3 md:right-3 md:mx-6 ">
+        <div className="mt-12 md:absolute md:bottom-3 md:right-3 md:mx-6 md:mt-0 ">
           <SocialMedia />
         </div>
       </footer>
