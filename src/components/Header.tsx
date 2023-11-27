@@ -61,7 +61,7 @@ export const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
               key={item.text}
               href={item.href}
               className={`mr-4 mt-4 block text-2xl md:mt-0 md:inline-block md:text-xl ${
-                isMenuOpen ? 'p-12' : ''
+                isMenuOpen ? 'p-8' : ''
               }`}
             >
               {item.text}
@@ -73,7 +73,7 @@ export const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
       {/* Botão para alternar o tema */}
       <div className={`flex items-center ${isMenuOpen ? 'hidden' : 'flex'}`}>
         <button onClick={toggleDarkMode}>
-          {isDarkMode ? <FaSun size={22} /> : <FaMoon size={22} />}
+          {isDarkMode ? <FaSun size={16} /> : <FaMoon size={16} />}
         </button>
       </div>
 

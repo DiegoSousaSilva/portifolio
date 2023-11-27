@@ -9,12 +9,12 @@ export const HomeSection = ({ isDarkMode }: HeaderProps) => {
   return (
     <section
       id="home"
-      className={`md: flex h-screen flex-col items-center  justify-center space-y-4 ${
+      className={`md: flex h-screen w-11/12 flex-col items-center  justify-center space-y-4 ${
         isDarkMode ? 'bg-darkBackground-500' : 'bg-lightBackground-500'
       }`}
     >
       <h1
-        className={`text-2xl font-bold md:text-5xl ${
+        className={`text-center text-2xl font-bold md:text-5xl ${
           isDarkMode ? 'text-textLight-500' : 'text-textDark-500'
         }`}
       >

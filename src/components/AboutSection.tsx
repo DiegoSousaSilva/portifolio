@@ -37,7 +37,7 @@ export const AboutSection = ({ isDarkMode }: HeaderProps) => {
             , prazer em conhecê-lo.
           </h1>
           <p
-            className={`pt-3 text-2xl md:w-[576px] ${
+            className={`pt-3 text-xl md:w-[576px] md:text-2xl ${
               isDarkMode ? 'text-textDark-500' : 'text-lightDescription-500'
             }`}
           >
