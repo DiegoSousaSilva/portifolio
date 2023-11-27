@@ -9,7 +9,7 @@ export const HomeSection = ({ isDarkMode }: HeaderProps) => {
   return (
     <section
       id="home"
-      className={`md: flex h-screen w-11/12 flex-col items-center  justify-center space-y-4 ${
+      className={`md: flex h-screen flex-col items-center  justify-center space-y-4 ${
         isDarkMode ? 'bg-darkBackground-500' : 'bg-lightBackground-500'
       }`}
     >
@@ -20,11 +20,11 @@ export const HomeSection = ({ isDarkMode }: HeaderProps) => {
       >
         Desenvolvedor de Software
       </h1>
-      <h1 className="font-pressstart text-2xl text-lightTitle-500 md:text-5xl">
+      <h1 className="text-center font-pressstart text-2xl text-lightTitle-500 md:text-5xl">
         Diego Sousa
       </h1>
       <p
-        className={`text-center text-xl md:w-[576px] md:text-2xl ${
+        className={`px-4 text-center text-xl md:w-[576px] md:text-2xl ${
           isDarkMode ? 'text-lightDescription-500' : 'text-darkDescription-500'
         }`}
       >
