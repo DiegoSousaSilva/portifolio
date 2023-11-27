@@ -25,7 +25,7 @@ const menuItems = [
   },
 ]
 
-const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
+export const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -136,5 +136,3 @@ const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
     </header>
   )
 }
-
-export default Header
