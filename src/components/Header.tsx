@@ -39,14 +39,29 @@ export const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
 
   return (
     <header
-      className={`flex items-center justify-between ${
+      className={`grid grid-cols-3 px-6 md:flex md:justify-between ${
         isDarkMode
           ? 'bg-darkBackground-500 text-textLight-500'
           : 'bg-lightBackground-500 text-textDark-500'
-      }  px-12 py-10`}
+      }  py-10 md:px-12`}
     >
-      <div className={`flex items-center ${isMenuOpen ? 'hidden' : 'flex'}`}>
-        <p className="font-pressstart text-sm font-bold">Diego Sousa</p>
+      {/* Botão para alternar o tema */}
+      <div
+        className={`items-center md:order-2 md:m-0 ${
+          isMenuOpen ? 'hidden' : 'flex'
+        }`}
+      >
+        <button onClick={toggleDarkMode}>
+          {isDarkMode ? <FaSun size={16} /> : <FaMoon size={16} />}
+        </button>
+      </div>
+
+      <div
+        className={`col-span-2 items-center  md:flex ${
+          isMenuOpen ? 'hidden' : 'flex'
+        }`}
+      >
+        <p className="font-pressstart text-base font-bold">Diego Sousa</p>
       </div>
 
       {/* Menu de navegação */}
@@ -70,15 +85,8 @@ export const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
         })}
       </nav>
 
-      {/* Botão para alternar o tema */}
-      <div className={`flex items-center ${isMenuOpen ? 'hidden' : 'flex'}`}>
-        <button onClick={toggleDarkMode}>
-          {isDarkMode ? <FaSun size={16} /> : <FaMoon size={16} />}
-        </button>
-      </div>
-
       {/* Ícone do menu para dispositivos móveis */}
-      <div className="absolute right-2 top-10 md:hidden">
+      <div className="absolute right-4 top-10 md:hidden">
         <button onClick={toggleMenu}>
           <svg
             className="h-6 w-6"

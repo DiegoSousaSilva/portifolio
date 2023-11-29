@@ -5,13 +5,15 @@ import { AboutSection } from '@/components/AboutSection'
 import { ServicesSection } from './ServicesSection'
 import { SocialMedia } from './SocialMedia'
 import { Services } from './Services'
+import { Tools } from './Tools'
 
 export {
+  AboutSection,
+  Button,
   Header,
   HomeSection,
-  Button,
-  AboutSection,
+  Services,
   ServicesSection,
   SocialMedia,
-  Services,
+  Tools,
 }

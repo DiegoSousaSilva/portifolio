@@ -1,15 +1,13 @@
+import { AppThemeProps } from '@/app/page'
 import { Services } from './Services'
+import { Tools } from './Tools'
 
-interface HeaderProps {
-  isDarkMode: boolean
-}
-
-export const ServicesSection = ({ isDarkMode }: HeaderProps) => {
+export const ServicesSection = ({ isDarkMode }: AppThemeProps) => {
   return (
     <section
       id="services"
       className={`${
-        isDarkMode ? 'bg-darkDescription-500' : 'bg-lightBackground-500'
+        isDarkMode ? 'bg-darkBackground-500' : 'bg-lightBackground-500'
       }`}
     >
       <div className="mx-auto w-4/5 py-3">
@@ -33,6 +31,7 @@ export const ServicesSection = ({ isDarkMode }: HeaderProps) => {
           </h4>
         </div>
         <Services />
+        <Tools isDarkMode={isDarkMode} />
       </div>
     </section>
   )

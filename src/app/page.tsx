@@ -7,6 +7,10 @@ import {
   ServicesSection,
 } from '@/components'
 
+export interface AppThemeProps {
+  isDarkMode: boolean
+}
+
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false)
 

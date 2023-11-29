@@ -1,28 +1,31 @@
-interface HeaderProps {
-  isDarkMode: boolean
-}
+import Image from 'next/image'
+import avatar from '../assets/images/avatar.png'
+import { AppThemeProps } from '@/app/page'
 
-export const AboutSection = ({ isDarkMode }: HeaderProps) => {
+export const AboutSection = ({ isDarkMode }: AppThemeProps) => {
   return (
     <section
       id="about"
-      className={`${
-        isDarkMode ? 'bg-darkBackground-100' : 'bg-darkBackground-500'
-      }`}
+      className={`${isDarkMode ? 'bg-textLight-800' : 'bg-darkBackground-500'}`}
     >
+      <h4
+        className={`pt-4 text-center text-sm font-bold md:text-base ${
+          isDarkMode ? 'text-darkDescription-900' : 'text-lightDescription-500'
+        }`}
+      >
+        Seja bem-vindo ao meu portifólio
+      </h4>
       <div className="mx-auto flex w-4/5 flex-col py-6 md:flex-row">
-        <div>
-          <h4
-            className={` text-sm font-bold md:text-base  ${
-              isDarkMode
-                ? 'text-darkDescription-900'
-                : 'text-lightDescription-500'
-            }`}
-          >
-            Seja bem-vindo ao meu portifólio
-          </h4>
+        <div className="flex items-center justify-center md:order-2 md:w-full">
+          <Image
+            src={avatar}
+            alt="Picture of the author"
+            className="w-40 p-3 md:w-[225px]"
+          />
+        </div>
+        <div className="md:order-1">
           <h1
-            className={`py-4 text-xl font-bold md:text-3xl ${
+            className={`py-4 text-center text-lg font-bold md:text-left md:text-3xl ${
               isDarkMode ? 'text-textDark-500' : 'text-textLight-500'
             }`}
           >
@@ -47,11 +50,6 @@ export const AboutSection = ({ isDarkMode }: HeaderProps) => {
             problemas, estou constantemente explorando novas tecnologias e
             aprimorando minhas habilidades para levar projetos além das
             expectativas
-          </p>
-        </div>
-        <div className="flex w-full items-center justify-center md:flex-row">
-          <p className="text-2xl  text-darkDescription-800">
-            [Aqui entra uma Imagem]
           </p>
         </div>
       </div>

@@ -1,11 +1,8 @@
+import { AppThemeProps } from '@/app/page'
 import { Button } from '.'
 import { SocialMedia } from './SocialMedia'
 
-interface HeaderProps {
-  isDarkMode: boolean
-}
-
-export const HomeSection = ({ isDarkMode }: HeaderProps) => {
+export const HomeSection = ({ isDarkMode }: AppThemeProps) => {
   return (
     <section
       id="home"
@@ -33,7 +30,7 @@ export const HomeSection = ({ isDarkMode }: HeaderProps) => {
         ideia do papel!
       </p>
       <footer className="w-full px-12 pt-12 md:pt-24">
-        <div className="flex flex-col items-center justify-center space-x-4 space-y-3 md:flex-row md:space-y-0">
+        <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:space-y-0">
           <Button
             isDarkMode={isDarkMode}
             title="Veja meu trabalho"
