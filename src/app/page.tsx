@@ -1,7 +1,11 @@
 'use client'
 import { useState } from 'react'
-import { HomeSection, Header } from '@/components'
-import { AboutSection } from '@/components/AboutSection'
+import {
+  HomeSection,
+  Header,
+  AboutSection,
+  ServicesSection,
+} from '@/components'
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -11,6 +15,7 @@ export default function Home() {
       <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
       <HomeSection isDarkMode={isDarkMode} />
       <AboutSection isDarkMode={isDarkMode} />
+      <ServicesSection isDarkMode={isDarkMode} />
     </main>
   )
 }

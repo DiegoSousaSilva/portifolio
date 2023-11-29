@@ -13,7 +13,7 @@ export const AboutSection = ({ isDarkMode }: HeaderProps) => {
       <div className="mx-auto flex w-4/5 flex-col py-6 md:flex-row">
         <div>
           <h4
-            className={`${
+            className={` text-sm font-bold md:text-base  ${
               isDarkMode
                 ? 'text-darkDescription-900'
                 : 'text-lightDescription-500'
@@ -22,7 +22,7 @@ export const AboutSection = ({ isDarkMode }: HeaderProps) => {
             Seja bem-vindo ao meu portifólio
           </h4>
           <h1
-            className={`py-4 text-2xl font-bold md:text-3xl ${
+            className={`py-4 text-xl font-bold md:text-3xl ${
               isDarkMode ? 'text-textDark-500' : 'text-textLight-500'
             }`}
           >
@@ -37,7 +37,7 @@ export const AboutSection = ({ isDarkMode }: HeaderProps) => {
             , prazer em conhecê-lo.
           </h1>
           <p
-            className={`pt-3 text-xl md:w-[576px] md:text-2xl ${
+            className={`pt-3 text-lg md:w-[576px] md:text-2xl ${
               isDarkMode ? 'text-textDark-500' : 'text-lightDescription-500'
             }`}
           >
@@ -49,7 +49,7 @@ export const AboutSection = ({ isDarkMode }: HeaderProps) => {
             expectativas
           </p>
         </div>
-        <div className="flex w-full items-center justify-center">
+        <div className="flex w-full items-center justify-center md:flex-row">
           <p className="text-2xl  text-darkDescription-800">
             [Aqui entra uma Imagem]
           </p>

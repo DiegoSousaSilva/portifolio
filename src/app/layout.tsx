@@ -1,10 +1,9 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import {
   Roboto_Flex as Roboto,
   Press_Start_2P as PressStart2P,
 } from 'next/font/google'
 import './globals.css'
-import Head from 'next/head'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 const pressStart = PressStart2P({
@@ -18,6 +17,13 @@ export const metadata: Metadata = {
   description: 'Meu Portifolio',
 }
 
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: 'device-width',
+  maximumScale: 1,
+  userScalable: false,
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -25,12 +31,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, screen-orientation=portrait"
-        />
-      </Head>
       <body className={`${roboto.variable} ${pressStart.variable} font-sans`}>
         {children}
       </body>
