@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: 'var(--font-roboto)',
+        poppins: 'var(--font-poppins)',
         pressstart: 'var(--font-press-start-2p)',
       },
       colors: {

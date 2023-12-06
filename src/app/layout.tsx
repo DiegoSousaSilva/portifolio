@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import {
   Roboto_Flex as Roboto,
   Press_Start_2P as PressStart2P,
+  Poppins,
 } from 'next/font/google'
 import './globals.css'
 
@@ -10,6 +11,11 @@ const pressStart = PressStart2P({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-press-start-2p',
+})
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
@@ -31,7 +37,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${pressStart.variable} font-sans`}>
+      <body
+        className={`${roboto.variable} ${poppins.variable} ${pressStart.variable} font-sans`}
+      >
         {children}
       </body>
     </html>

@@ -15,7 +15,7 @@ export const AboutSection = ({ isDarkMode }: AppThemeProps) => {
       >
         Seja bem-vindo ao meu portifólio
       </h4>
-      <div className="mx-auto flex w-4/5 flex-col py-6 md:flex-row">
+      <div className="mx-6 flex flex-col py-6 md:mx-auto md:w-4/5 md:flex-row">
         <div className="flex items-center justify-center md:order-2 md:w-full">
           <Image
             src={avatar}
@@ -40,7 +40,7 @@ export const AboutSection = ({ isDarkMode }: AppThemeProps) => {
             , prazer em conhecê-lo.
           </h1>
           <p
-            className={`pt-3 text-lg md:w-[576px] md:text-2xl ${
+            className={`pt-3 text-base md:w-[576px] md:text-2xl ${
               isDarkMode ? 'text-textDark-500' : 'text-lightDescription-500'
             }`}
           >

@@ -1,30 +1,11 @@
-import Link from 'next/link'
 import { Dispatch, SetStateAction, useState } from 'react'
 import { FaMoon, FaSun } from 'react-icons/fa'
+import { NavigationMenu } from '.'
 
 interface HeaderProps {
   setIsDarkMode: Dispatch<SetStateAction<boolean>>
   isDarkMode: boolean
 }
-
-const menuItems = [
-  {
-    href: '/',
-    text: 'Inicio',
-  },
-  {
-    href: '/#about',
-    text: 'Sobre',
-  },
-  {
-    href: '/#projects',
-    text: 'Portifólio',
-  },
-  {
-    href: '/#contact',
-    text: 'Contato',
-  },
-]
 
 export const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -52,7 +33,7 @@ export const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
         }`}
       >
         <button onClick={toggleDarkMode}>
-          {isDarkMode ? <FaSun size={16} /> : <FaMoon size={16} />}
+          {isDarkMode ? <FaSun size={22} /> : <FaMoon size={22} />}
         </button>
       </div>
 
@@ -61,29 +42,13 @@ export const Header = ({ setIsDarkMode, isDarkMode }: HeaderProps) => {
           isMenuOpen ? 'hidden' : 'flex'
         }`}
       >
-        <p className="font-pressstart text-base font-bold">Diego Sousa</p>
+        <p className="font-poppins text-lg font-bold md:text-base">
+          Diego Sousa
+        </p>
       </div>
 
       {/* Menu de navegação */}
-      <nav
-        className={`mt-2 flex-col items-center md:flex md:flex-row ${
-          isMenuOpen ? 'flex h-screen ' : 'hidden'
-        }`}
-      >
-        {menuItems.map((item) => {
-          return (
-            <Link
-              key={item.text}
-              href={item.href}
-              className={`mr-4 mt-4 block text-2xl md:mt-0 md:inline-block md:text-xl ${
-                isMenuOpen ? 'p-8' : ''
-              }`}
-            >
-              {item.text}
-            </Link>
-          )
-        })}
-      </nav>
+      <NavigationMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 
       {/* Ícone do menu para dispositivos móveis */}
       <div className="absolute right-4 top-10 md:hidden">

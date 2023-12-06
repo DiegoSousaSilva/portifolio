@@ -6,6 +6,8 @@ import { ServicesSection } from './ServicesSection'
 import { SocialMedia } from './SocialMedia'
 import { Services } from './Services'
 import { Tools } from './Tools'
+import { Footer } from './Footer'
+import { NavigationMenu } from './NavigationMenu'
 
 export {
   AboutSection,
@@ -16,4 +18,6 @@ export {
   ServicesSection,
   SocialMedia,
   Tools,
+  Footer,
+  NavigationMenu,
 }

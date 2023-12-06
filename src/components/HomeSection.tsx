@@ -6,18 +6,18 @@ export const HomeSection = ({ isDarkMode }: AppThemeProps) => {
   return (
     <section
       id="home"
-      className={`md: flex h-screen flex-col items-center  justify-center space-y-4 ${
+      className={`md: flex h-screen flex-col items-center  justify-center space-y-3 md:space-y-4 ${
         isDarkMode ? 'bg-darkBackground-500' : 'bg-lightBackground-500'
       }`}
     >
       <h1
-        className={`text-center text-2xl font-bold md:text-5xl ${
+        className={`text-center text-xl font-bold md:text-5xl ${
           isDarkMode ? 'text-textLight-500' : 'text-textDark-500'
         }`}
       >
         Desenvolvedor de Software
       </h1>
-      <h1 className="text-center font-pressstart text-2xl text-lightTitle-500 md:text-5xl">
+      <h1 className="font-poppins text-center text-xl font-bold text-lightTitle-500 md:text-5xl">
         Diego Sousa
       </h1>
       <p

@@ -5,6 +5,7 @@ import {
   Header,
   AboutSection,
   ServicesSection,
+  Footer,
 } from '@/components'
 
 export interface AppThemeProps {
@@ -20,6 +21,7 @@ export default function Home() {
       <HomeSection isDarkMode={isDarkMode} />
       <AboutSection isDarkMode={isDarkMode} />
       <ServicesSection isDarkMode={isDarkMode} />
+      <Footer isDarkMode={isDarkMode} />
     </main>
   )
 }

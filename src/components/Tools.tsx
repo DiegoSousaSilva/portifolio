@@ -101,13 +101,13 @@ export const Tools = ({ isDarkMode }: AppThemeProps) => {
   return (
     <section id="tools">
       <h1
-        className={`py-4 text-center text-xl font-bold md:text-left md:text-3xl ${
+        className={`py-3 text-center text-xl font-bold md:text-left md:text-3xl ${
           isDarkMode ? 'text-textLight-500' : 'text-textDark-400'
         }`}
       >
         Ferramentas utilizadas
       </h1>
-      <ul className="grid grid-cols-3 gap-6 py-12 text-lg md:grid-cols-6 md:gap-x-12 lg:grid-cols-8">
+      <ul className="grid grid-cols-4 gap-5 py-12 text-lg md:grid-cols-6 md:gap-x-12 lg:grid-cols-8">
         {tools.map((tool) => {
           return (
             <li
@@ -116,7 +116,7 @@ export const Tools = ({ isDarkMode }: AppThemeProps) => {
             >
               {tool.icon}
               <h2
-                className={`py-4 text-center text-sm font-bold ${
+                className={`font-poppins py-2 text-center text-xs font-bold md:py-4 md:text-sm ${
                   isDarkMode ? 'text-textLight-500' : 'text-textDark-500'
                 }`}
               >
