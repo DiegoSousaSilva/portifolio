@@ -41,10 +41,10 @@ export const Services = () => {
               className="p-3"
             />
             <hgroup className="absolute left-0 right-0 px-3 md:top-[58%]">
-              <h2 className="font-poppins py-4 text-center text-base font-bold text-textDark-500">
+              <h2 className="py-4 text-center font-poppins text-base font-bold text-textDark-500">
                 {service.title}
               </h2>
-              <p className="font-poppins px-3 text-sm leading-7 text-darkDescription-500">
+              <p className="px-3 font-poppins text-sm leading-7 text-darkDescription-500">
                 {service.dscription}
               </p>
             </hgroup>

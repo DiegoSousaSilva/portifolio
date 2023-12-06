@@ -54,7 +54,7 @@ export const NavigationMenu: React.FC<NavigationMenuProps> = ({
             onClick={toggleMenu && (() => toggleMenu())}
             key={item.text}
             href={item.href}
-            className={`font-poppins mr-4 mt-4 block text-2xl md:mt-0 md:inline-block md:text-xl ${
+            className={`mr-4 mt-4 block font-poppins text-2xl md:mt-0 md:inline-block md:text-xl ${
               isMenuOpen ? 'p-8' : ''
             }`}
           >

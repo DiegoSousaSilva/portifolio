@@ -116,7 +116,7 @@ export const Tools = ({ isDarkMode }: AppThemeProps) => {
             >
               {tool.icon}
               <h2
-                className={`font-poppins py-2 text-center text-xs font-bold md:py-4 md:text-sm ${
+                className={`py-2 text-center font-poppins text-xs font-bold md:py-4 md:text-sm ${
                   isDarkMode ? 'text-textLight-500' : 'text-textDark-500'
                 }`}
               >

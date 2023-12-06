@@ -25,7 +25,7 @@ export const Footer = ({ isDarkMode }: AppThemeProps) => {
       />
 
       <h2
-        className={`font-poppins py-3 text-center text-base text-lightDescription-600 md:text-lg`}
+        className={`py-3 text-center font-poppins text-base text-lightDescription-600 md:text-lg`}
       >
         Copyright 2023 - Diego Sousa
       </h2>

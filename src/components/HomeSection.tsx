@@ -17,7 +17,7 @@ export const HomeSection = ({ isDarkMode }: AppThemeProps) => {
       >
         Desenvolvedor de Software
       </h1>
-      <h1 className="font-poppins text-center text-xl font-bold text-lightTitle-500 md:text-5xl">
+      <h1 className="text-center font-poppins text-xl font-bold text-lightTitle-500 md:text-5xl">
         Diego Sousa
       </h1>
       <p
