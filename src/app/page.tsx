@@ -6,7 +6,10 @@ import {
   AboutSection,
   ServicesSection,
   Footer,
+  ToolsSection,
+  ContactSection,
 } from '@/components'
+import { ProjectsSection } from '@/components/ProjectsSection'
 
 export interface AppThemeProps {
   isDarkMode: boolean
@@ -21,6 +24,9 @@ export default function Home() {
       <HomeSection isDarkMode={isDarkMode} />
       <AboutSection isDarkMode={isDarkMode} />
       <ServicesSection isDarkMode={isDarkMode} />
+      <ToolsSection isDarkMode={isDarkMode} />
+      <ProjectsSection isDarkMode={isDarkMode} />
+      <ContactSection />
       <Footer isDarkMode={isDarkMode} />
     </main>
   )

@@ -91,6 +91,7 @@ const config: Config = {
           800: '#1C2127',
           900: '#181B22',
         },
+        backgroundItem: '#AFC9DC',
       },
     },
   },

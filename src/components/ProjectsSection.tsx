@@ -1,7 +1,7 @@
 import { AppThemeProps } from '@/app/page'
-import { Services } from './Services'
+import { Projects } from './Projects'
 
-export const ServicesSection = ({ isDarkMode }: AppThemeProps) => {
+export const ProjectsSection = ({ isDarkMode }: AppThemeProps) => {
   return (
     <section
       id="services"
@@ -16,7 +16,7 @@ export const ServicesSection = ({ isDarkMode }: AppThemeProps) => {
               isDarkMode ? 'text-textLight-500' : 'text-textDark-400'
             }`}
           >
-            Serviços que ofereço
+            Portifolio
           </h1>
           <h4
             className={`text-center text-base font-bold md:text-left ${
@@ -25,11 +25,11 @@ export const ServicesSection = ({ isDarkMode }: AppThemeProps) => {
                 : 'text-darkDescription-500'
             }`}
           >
-            Ofereço serviços na area de programação incluindo desenvolvimento
-            web, mobile, backend e design.
+            Conheça alguns dos meus projetos desenvolvidos utilizando as
+            melhores tecnologias disponíveis.
           </h4>
         </div>
-        <Services />
+        <Projects />
       </div>
     </section>
   )

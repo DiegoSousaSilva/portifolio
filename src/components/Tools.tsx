@@ -22,78 +22,78 @@ import { AppThemeProps } from '@/app/page'
 export const Tools = ({ isDarkMode }: AppThemeProps) => {
   const tools = [
     {
-      icon: <FaReact size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <FaReact size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'React',
     },
     {
-      icon: <FaHtml5 size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <FaHtml5 size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'HTML5',
     },
     {
-      icon: <FaCss3 size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <FaCss3 size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'CSS3',
     },
     {
-      icon: <FaReact size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <FaReact size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'React Native',
     },
     {
-      icon: <FaNodeJs size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <FaNodeJs size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'NodeJS',
     },
     {
-      icon: <FaGit size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <FaGit size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'GIT',
     },
     {
       icon: (
-        <IoLogoFirebase size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />
+        <IoLogoFirebase size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />
       ),
       title: 'Firebase',
     },
     {
       icon: (
-        <SiTailwindcss size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />
+        <SiTailwindcss size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />
       ),
       title: 'Tailwind',
     },
     {
-      icon: <SiFastify size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <SiFastify size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'Fastify',
     },
     {
       icon: (
         <IoLogoJavascript
           size={36}
-          color={isDarkMode ? '#DFDFDF' : '#263138'}
+          color={isDarkMode ? '#1F303A' : '#FBE3D1'}
         />
       ),
       title: 'Javascript',
     },
     {
-      icon: <SiPrisma size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <SiPrisma size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'Prisma',
     },
     {
       icon: (
-        <SiTypescript size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />
+        <SiTypescript size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />
       ),
       title: 'Typescript',
     },
     {
-      icon: <SiSqlite size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <SiSqlite size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'SQLITE',
     },
     {
-      icon: <FaPhp size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <FaPhp size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'PHP',
     },
     {
-      icon: <DiMysql size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <DiMysql size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'MySQL',
     },
     {
-      icon: <FaFigma size={36} color={isDarkMode ? '#DFDFDF' : '#263138'} />,
+      icon: <FaFigma size={36} color={isDarkMode ? '#1F303A' : '#FBE3D1'} />,
       title: 'Figma',
     },
   ]
@@ -102,7 +102,7 @@ export const Tools = ({ isDarkMode }: AppThemeProps) => {
     <section id="tools">
       <h1
         className={`py-3 text-center text-xl font-bold md:text-left md:text-3xl ${
-          isDarkMode ? 'text-textLight-500' : 'text-textDark-400'
+          isDarkMode ? 'text-darkDescription-900' : 'text-[#FBE3D1]'
         }`}
       >
         Ferramentas utilizadas
@@ -117,7 +117,7 @@ export const Tools = ({ isDarkMode }: AppThemeProps) => {
               {tool.icon}
               <h2
                 className={`py-2 text-center font-poppins text-xs font-bold md:py-4 md:text-sm ${
-                  isDarkMode ? 'text-textLight-500' : 'text-textDark-500'
+                  isDarkMode ? 'text-darkDescription-900' : 'text-[#FBE3D1]'
                 }`}
               >
                 {tool.title}
