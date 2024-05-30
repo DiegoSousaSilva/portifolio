@@ -5,6 +5,7 @@ import {
   Poppins,
 } from 'next/font/google'
 import './globals.css'
+import { Toaster } from 'react-hot-toast'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 const pressStart = PressStart2P({
@@ -40,6 +41,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${poppins.variable} ${pressStart.variable} font-sans`}
       >
+        <Toaster position="top-center" reverseOrder={false} />
         {children}
       </body>
     </html>

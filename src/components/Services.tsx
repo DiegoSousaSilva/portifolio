@@ -31,7 +31,7 @@ export const Services = () => {
         return (
           <li
             key={service.title}
-            className="bg-backgroundItem relative h-[467px] rounded-lg p-4 shadow-xl"
+            className="relative h-[467px] rounded-lg bg-backgroundItem p-4 shadow-xl"
           >
             <Image
               src={service.image}

@@ -9,7 +9,7 @@ export const AboutSection = ({ isDarkMode }: AppThemeProps) => {
       className={`${isDarkMode ? 'bg-textLight-800' : 'bg-darkBackground-500'}`}
     >
       <h4
-        className={`pt-4 text-center text-sm font-bold md:text-base ${
+        className={`pt-4 text-center font-poppins text-sm font-bold md:text-lg ${
           isDarkMode ? 'text-darkDescription-900' : 'text-lightDescription-500'
         }`}
       >
@@ -25,7 +25,7 @@ export const AboutSection = ({ isDarkMode }: AppThemeProps) => {
         </div>
         <div className="md:order-1">
           <h1
-            className={`py-4 text-center text-lg font-bold md:text-left md:text-3xl ${
+            className={`py-4 text-center font-poppins text-lg font-bold md:text-left md:text-3xl ${
               isDarkMode ? 'text-textDark-500' : 'text-textLight-500'
             }`}
           >
@@ -40,7 +40,7 @@ export const AboutSection = ({ isDarkMode }: AppThemeProps) => {
             , prazer em conhecê-lo.
           </h1>
           <p
-            className={`pt-3 text-base md:w-[576px] md:text-2xl ${
+            className={`pt-3 font-poppins text-base md:w-[576px] md:text-2xl ${
               isDarkMode ? 'text-textDark-500' : 'text-lightDescription-500'
             }`}
           >

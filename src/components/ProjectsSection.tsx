@@ -12,14 +12,14 @@ export const ProjectsSection = ({ isDarkMode }: AppThemeProps) => {
       <div className="mx-auto w-4/5 py-3">
         <div>
           <h1
-            className={`py-4 text-center text-xl font-bold md:text-left md:text-3xl ${
+            className={`py-4 text-center font-poppins text-xl font-bold md:text-left md:text-3xl ${
               isDarkMode ? 'text-textLight-500' : 'text-textDark-400'
             }`}
           >
             Portifolio
           </h1>
           <h4
-            className={`text-center text-base font-bold md:text-left ${
+            className={`text-center font-poppins text-base font-bold md:text-left md:text-lg ${
               isDarkMode
                 ? 'text-lightDescription-500'
                 : 'text-darkDescription-500'

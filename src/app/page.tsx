@@ -26,7 +26,7 @@ export default function Home() {
       <ServicesSection isDarkMode={isDarkMode} />
       <ToolsSection isDarkMode={isDarkMode} />
       <ProjectsSection isDarkMode={isDarkMode} />
-      <ContactSection />
+      <ContactSection isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
     </main>
   )

@@ -101,7 +101,7 @@ export const Tools = ({ isDarkMode }: AppThemeProps) => {
   return (
     <section id="tools">
       <h1
-        className={`py-3 text-center text-xl font-bold md:text-left md:text-3xl ${
+        className={`py-3 text-center font-poppins text-xl font-bold md:text-left md:text-3xl ${
           isDarkMode ? 'text-darkDescription-900' : 'text-[#FBE3D1]'
         }`}
       >

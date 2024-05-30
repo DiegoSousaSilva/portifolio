@@ -11,7 +11,7 @@ export const HomeSection = ({ isDarkMode }: AppThemeProps) => {
       }`}
     >
       <h1
-        className={`text-center text-xl font-bold md:text-5xl ${
+        className={`text-center font-poppins text-xl font-bold md:text-5xl ${
           isDarkMode ? 'text-textLight-500' : 'text-textDark-500'
         }`}
       >
@@ -21,7 +21,7 @@ export const HomeSection = ({ isDarkMode }: AppThemeProps) => {
         Diego Sousa
       </h1>
       <p
-        className={`px-4 text-center text-xl md:w-[576px] md:text-2xl ${
+        className={`px-4 text-center font-poppins text-xl md:w-[576px] md:text-2xl ${
           isDarkMode ? 'text-lightDescription-500' : 'text-darkDescription-500'
         }`}
       >
